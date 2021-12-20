@@ -1,0 +1,126 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: #2f303a;
+    color: var(--white);
+    .logo {
+        display: block;
+        margin-bottom: 20px;
+        color: var(--white);
+        margin-right: auto;
+    }
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-contacts {
+    margin-right: 70px;
+    width: 231px;
+}
+
+.footer-list__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+/* Address не наследует font-style по умолчанию */
+.address {
+    font-style: inherit;
+}
+
+.address__map {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--white);
+}
+
+.address__mail,
+.address__tel {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Добавляем соц.сети в футере------------------- */
+.footer__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+
+    margin-bottom: 20px;
+}
+
+.footer__social-list {
+    display: flex;
+    .social-list__link {
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            background-color: var(--accent);
+        }
+    }
+    .social-list__icon {
+        fill: var(--white);
+    }
+}
+
+.footer-social-links {
+    margin-right: 93px;
+}
+
+/* ---------------------Форма подписки------------------ */
+.footer-subscription {
+    width: 570px;
+}
+
+.form-subscription {
+    display: flex;
+}
+
+.form-subscription__input {
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    margin-right: 12px;
+    padding: 15px 16px;
+
+    color: var(--white);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+        border-color: var(--white);
+        color: var(--white);
+    }
+}
+
+.form-subscription__btn-text {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/icon-send.svg);
+        margin-left: 10px;
+    }
+}

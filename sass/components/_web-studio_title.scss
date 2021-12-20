@@ -1,0 +1,13 @@
+.box__title,
+.team__title,
+.clients__title {
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--black);
+}
