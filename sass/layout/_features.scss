@@ -1,35 +1,33 @@
 /* <!-- Перечень особенностей --> */
-
-@media screen and (min-width: 768px) {
-    .features {
-        padding-top: 60px;
-        padding-bottom: 30px;
+.features {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
+}
 
-    .features-list {
+.features-list {
+    @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         margin-right: -30px;
     }
-    .features-list__item {
+}
+
+.features-list__item {
+    @media screen and (min-width: 768px) {
         flex-basis: calc(100% / 2 - 30px);
         margin-right: 30px;
     }
-}
-
-@media screen and (min-width: 1200px) {
-    .features {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
-    .features-list__item {
+    @media screen and (min-width: 1200px) {
         flex-basis: calc(100% / 4 - 30px);
     }
-}
-
-.features-list__item:not(:last-child) {
-    @media screen and (max-width: 1199px) {
-        margin-bottom: 30px;
+    &:not(:last-child) {
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 30px;
+        }
     }
 }
 

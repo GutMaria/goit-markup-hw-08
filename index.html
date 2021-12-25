@@ -27,16 +27,13 @@
     </head>
 
     <body>
-        <!-- <header class="header">
-            
+        <header class="header">
             <div class="container header-container">
                 <nav class="header-nav">
-                    
                     <a href="" lang="en" class="logo">
                         <span class="logo__text">Web</span>Studio
                     </a>
                     <ul class="site-nav">
-                        
                         <li class="site-nav__item">
                             <a href="/" class="site-nav__link site-nav__link--active">Студия</a>
                         </li>
@@ -48,7 +45,7 @@
                         </li>
                     </ul>
                 </nav>
-                
+
                 <ul class="contacts">
                     <li class="contacts__item">
                         <a class="contacts__link" href="mailto:info@devstudio.com"
@@ -67,8 +64,13 @@
                         >
                     </li>
                 </ul>
+                <button class="mob-menu-btn" type="button">
+                    <svg class="mob-menu-btn__icon" width="40" height="40">
+                        <use href="./images/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
             </div>
-        </header>  -->
+        </header>
 
         <!-- Основной контент -->
         <main>
@@ -144,15 +146,30 @@
                     <h2 class="box__title">Чем мы занимаемся</h2>
                     <ul class="box-list">
                         <li class="box-list__item">
-                            <img src="./images/img1.jpg" alt="Разработка" width="370" />
+                            <img
+                                srcset="./images/img1.jpg 1x, ./images/img1@2x-min.jpg 2x"
+                                src="./images/img1.jpg"
+                                alt="Разработка"
+                                width="370"
+                            />
                             <p class="box-list__text">Десктопные приложения</p>
                         </li>
                         <li class="box-list__item">
-                            <img src="./images/img2.jpg" alt="Планирование" width="370" />
+                            <img
+                                srcset="./images/img2.jpg 1x, ./images/img2@2x-min.jpg 2x"
+                                src="./images/img2.jpg"
+                                alt="Планирование"
+                                width="370"
+                            />
                             <p class="box-list__text">Мобильные приложения</p>
                         </li>
                         <li class="box-list__item">
-                            <img src="./images/img3.jpg" alt="Визуализация" width="370" />
+                            <img
+                                srcset="./images/img3.jpg 1x, ./images/img3@2x-min.jpg 2x"
+                                src="./images/img3.jpg"
+                                alt="Визуализация"
+                                width="370"
+                            />
                             <p class="box-list__text">Дизайнерские решения</p>
                         </li>
                     </ul>
@@ -164,7 +181,28 @@
                     <h2 class="team__title">Наша команда</h2>
                     <ul class="team-list">
                         <li class="team-list__card">
-                            <img src="./images/photo1.jpg" alt="фото дезайнера" />
+                            <picture>
+                                <source
+                                    srcset="./images/photo1.jpg 1x, ./images/photo1@2x-min.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/photo1_tab-min.jpg   1x,
+                                        ./images/photo1_tab2x-min.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/photo1_mob-min.jpg   1x,
+                                        ./images/photo1_mob2x-min.jpg 2x
+                                    "
+                                    media="(min-width: 320px)"
+                                />
+                                <img src="./images/photo1_mob-min.jpg" alt="фото дезайнера" />
+                            </picture>
+
                             <div class="team-card-bottom">
                                 <h3 class="team-card-bottom__title">Игорь Демьяненко</h3>
                                 <p class="team-card-bottom__text" lang="en">Product Designer</p>
@@ -206,7 +244,28 @@
                             </div>
                         </li>
                         <li class="team-list__card">
-                            <img src="./images/photo2.jpg" alt="фото разработчика" />
+                            <picture>
+                                <source
+                                    srcset="./images/photo2.jpg 1x, ./images/photo2@2x-min.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/photo2_tab-min.jpg   1x,
+                                        ./images/photo2_tab2x-min.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/photo2_mob@1x-min.jpg 1x,
+                                        ./images/photo2_mob@2x-min.jpg 2x
+                                    "
+                                    media="(min-width: 320px)"
+                                />
+                                <img src="./images/photo2_mob@1x-min.jpg" alt="фото разработчика" />
+                            </picture>
+
                             <div class="team-card-bottom">
                                 <h3 class="team-card-bottom__title">Ольга Репина</h3>
                                 <p class="team-card-bottom__text" lang="en">Frontend Developer</p>
@@ -248,7 +307,28 @@
                             </div>
                         </li>
                         <li class="team-list__card">
-                            <img src="./images/photo3.jpg" alt="фото маркетолога" />
+                            <picture>
+                                <source
+                                    srcset="./images/photo3.jpg 1x, ./images/photo3@2x-min.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/photo3_tab-min.jpg   1x,
+                                        ./images/photo3_tab2x-min.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/photo3_mob-min.jpg   1x,
+                                        ./images/photo3_mob2x-min.jpg 2x
+                                    "
+                                    media="(min-width: 320px)"
+                                />
+                                <img src="./images/photo3_mob-min.jpg" alt="фото маркетолога" />
+                            </picture>
+
                             <div class="team-card-bottom">
                                 <h3 class="team-card-bottom__title">Николай Тарасов</h3>
                                 <p class="team-card-bottom__text" lang="en">Marketing</p>
@@ -290,7 +370,28 @@
                             </div>
                         </li>
                         <li class="team-list__card">
-                            <img src="./images/photo4.jpg" alt="фото UI Designer" />
+                            <picture>
+                                <source
+                                    srcset="./images/photo4.jpg 1x, ./images/photo4@2x-min.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/photo4_tab-min.jpg   1x,
+                                        ./images/photo4_tab2x-min.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/photo4_mob-min.jpg   1x,
+                                        ./images/photo4_mob2x-min.jpg 2x
+                                    "
+                                    media="(min-width: 320px)"
+                                />
+                                <img src="./images/photo4_mob-min.jpg" alt="фото UI Designer" />
+                            </picture>
+
                             <div class="team-card-bottom">
                                 <h3 class="team-card-bottom__title">Михаил Ермаков</h3>
                                 <p class="team-card-bottom__text" lang="en">UI Designer</p>
@@ -472,7 +573,7 @@
                 </div>
             </div>
         </footer>
-        <!-- <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <div class="feedback">
                     <p class="feedback__title">Оставьте свои данные, мы вам перезвоним</p>
@@ -551,7 +652,7 @@
                     </svg>
                 </button>
             </div>
-        </div> -->
+        </div>
         <script src="./js/modal.js"></script>
     </body>
 </html>
