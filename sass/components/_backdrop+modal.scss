@@ -8,22 +8,26 @@
     /* visibility: visible; */
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: scroll;
 }
 
 .modal {
     width: 100%;
     height: auto;
     max-width: 450px;
+    position: absolute;
+    top: 93px;
+    left: 50%;
     @media screen and (min-width: 1200px) {
         max-width: 528px;
         min-height: 581px;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1) rotate(0);
     }
 
     background-color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1) rotate(0);
+
+    transform: translate(-50%) scale(1) rotate(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

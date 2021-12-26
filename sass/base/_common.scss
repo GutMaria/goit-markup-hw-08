@@ -3,7 +3,10 @@ body {
     background-color: #ffffff;
     color: #757575;
     letter-spacing: 0.03em;
-    // background-color: rosybrown;
+}
+
+body.modal-open {
+    overflow: hidden;
 }
 
 .container {
@@ -11,7 +14,6 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    // outline: 1px solid red;
 
     @media screen and (min-width: 480px) {
         width: 480px;
