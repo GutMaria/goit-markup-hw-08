@@ -482,11 +482,11 @@ body.modal-open {
 .box__title,
 .team__title,
 .clients__title {
-  margin-bottom: 30px;
-  font-size: 36px;
-  line-height: 1.17;
   text-align: center;
   color: var(--black);
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.17;
 }
 
 @media screen and (min-width: 1200px) {
@@ -494,13 +494,14 @@ body.modal-open {
   .team__title,
   .clients__title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
 /* <!-- Перечень особенностей --> */
 .features {
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -515,6 +516,12 @@ body.modal-open {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-list {
+    margin-bottom: -30px;
   }
 }
 
@@ -755,6 +762,7 @@ body.modal-open {
 
 .clients-list__item {
   flex-basis: calc(100% / 2 - 30px);
+  height: 92px;
   margin-right: 15px;
   margin-left: 15px;
   margin-bottom: 30px;
@@ -769,7 +777,6 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .clients-list__item {
     width: 170px;
-    height: 92px;
   }
 }
 
@@ -851,7 +858,12 @@ body.modal-open {
 /* Address не наследует font-style по умолчанию */
 .address {
   font-style: inherit;
-  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1199px) {
+  .address {
+    margin-bottom: 60px;
+  }
 }
 
 .address__map {
@@ -872,7 +884,12 @@ body.modal-open {
 /* Добавляем соц.сети в футере------------------- */
 .footer-social-links {
   width: 100%;
-  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-social-links {
+    margin-bottom: 60px;
+  }
 }
 
 .footer__title {
@@ -1205,7 +1222,6 @@ body.modal-open {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1220,7 +1236,7 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .filter {
     margin-bottom: 50px;
   }
@@ -1229,6 +1245,7 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .filter {
     margin-top: -15px;
+    margin-bottom: 40px;
   }
 }
 

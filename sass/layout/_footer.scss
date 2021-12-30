@@ -47,7 +47,9 @@
 /* Address не наследует font-style по умолчанию */
 .address {
     font-style: inherit;
-    margin-bottom: 60px;
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
 }
 
 .address__map {
@@ -68,7 +70,9 @@
 /* Добавляем соц.сети в футере------------------- */
 .footer-social-links {
     width: 100%;
-    margin-bottom: 60px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
 }
 
 .footer__title {

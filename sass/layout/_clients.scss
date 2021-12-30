@@ -21,6 +21,7 @@
 
 .clients-list__item {
     flex-basis: calc(100% / 2 - 30px);
+    height: 92px;
     margin-right: 15px;
     margin-left: 15px;
     margin-bottom: 30px;
@@ -30,7 +31,6 @@
     }
     @media screen and (min-width: 1200px) {
         width: 170px;
-        height: 92px;
     }
 }
 
